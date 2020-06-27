@@ -1,0 +1,248 @@
+h1 , h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 20px;
+  color: #808D99;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* top section */
+
+.nav {
+  display: flex;
+  padding: 3% 5%;
+}
+
+.top-section-body {
+  margin: 0;
+}
+
+.top-section {
+  background-color: #EBFBFF;
+  background-size: cover;
+  background-image: url("../images/bg-hero-desktop.svg");
+}
+
+.top-section-text {
+  padding: 10% 5%;
+}
+
+.mockup-img {
+  width: 80%;
+  height: 80%;
+  margin: 7.5% 10%;
+}
+
+/* buttons styling */
+
+.btn-try {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 28px;
+  font-weight: 700;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-left: auto;
+}
+
+.btn-start {
+  font-size: 16px;
+  padding: 0.75rem 3rem;
+  border-radius: 28px;
+  margin-top: 15px;
+  color: #fff;
+  background-color: #FF52BF;
+}
+
+.btn-start:hover {
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* features-section */
+
+.feature {
+  width: 85%;
+  padding: 50px;
+  margin: 50px auto;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.img--middle {
+  order: -1;
+}
+
+.feature--text {
+  margin: 0 50px;
+}
+
+.feature--img img {
+  width: 100%;
+}
+
+/* call-to-action section */
+
+.cta {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5%;
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cta p {
+  font-weight: 700;
+  font-size: 25px;
+  color: black;
+}
+
+/* footer section */
+
+.footer {
+  padding: 40px;
+  padding-top: 150px;
+  background-color: #00252E;
+}
+
+.footer p {
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+/* huddle logo in footer section */
+
+.white-logo-img {
+  margin-bottom: 40px;
+}
+
+/* Grid to hold the footer content */
+
+.foot-wrapper {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 40px 350px;
+  align-items: start;
+}
+
+.footer--col4 {
+  display: grid;
+  align-content: space-between;
+}
+
+.custom-icon {
+  color: #fff;
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+.copyrights {
+  font-size: 12px;
+}
+
+@media (max-width: 880px) {
+
+  /* top section */
+
+  .top-section {
+    background-image:  url("../images/bg-hero-mobile.svg");
+  }
+
+  .top-section-text {
+    text-align: center;
+    padding: 10%;
+  }
+
+  /* features-section */
+
+  .feature {
+    grid-template-columns: none;
+    grid-template-rows: auto 1fr;
+    padding: 50px 30px;
+  }
+
+  .feature--text {
+    text-align: center;
+    margin: 0;
+  }
+
+  .feature--img {
+    order: -1;
+  }
+
+  /* call-to-action section */
+
+  .cta {
+    width: 85%;
+    padding: 25px 15px;
+  }
+
+  .cta p {
+    font-size: 20px;
+  }
+
+  /* footer section */
+
+  .foot-wrapper {
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 20px;
+  }
+
+  .footer--col4 {
+    justify-items: center;
+  }
+
+  .copyrights {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  /* top section */
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .btn-try {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  /* features-section */
+
+  .feature {
+    padding: 50px 20px;
+  }
+
+  /* footer section */
+
+  .contact {
+    grid-template-columns: 40px 1fr;
+  }
+}
